@@ -17,7 +17,7 @@ Vagrant::Config.run do |config|
   config.vm.box = "wheezy-b2-i386"
   config.vm.box_url = "http://vboxes.learn2prog.de/wheezy-b2-i386.box"
  
-  config.vm.customize ["modifyvm", :id, "--memory", "3072"]
+  config.vm.customize ["modifyvm", :id, "--memory", "1024"]
   config.vm.network :hostonly, "192.168.33.12"
   config.vm.forward_port 9292, 9292
   config.vm.forward_port 5601, 5601
