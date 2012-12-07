@@ -21,6 +21,7 @@ Vagrant::Config.run do |config|
   config.vm.network :hostonly, "192.168.33.12"
   config.vm.forward_port 9292, 9292
   config.vm.forward_port 5601, 5601
+  config.vm.forward_port 514, 5514
 
   config.vm.provision :shell, :inline => "(test /var/log/dmesg -nt /var/lib/apt/lists/ && apt-get -q update > /dev/null);"
  

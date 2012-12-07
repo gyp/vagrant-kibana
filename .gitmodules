@@ -1,6 +1,6 @@
 [submodule "modules/logstash"]
 	path = modules/logstash
-	url = https://github.com/simonmcc/puppet-logstash.git
+	url = git@github.com:gyp/puppet-logstash.git 
 [submodule "modules/kibana"]
 	path = modules/kibana
 	url = git@github.com:k9ert/puppet-kibana.git
